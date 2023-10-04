@@ -1,0 +1,222 @@
+.contenedor-grid{
+    display: grid;
+    grid-template: 20% 1fr 20%/25% 1fr;
+    grid-template-areas:
+    "header header"
+    "left contenido"
+    "footer footer";
+    grid-gap: 20px;
+    height: 100vh;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px){
+    .contenedor-grid{
+        display: grid;
+        grid-template: 25% 1fr 20% 10%/25% 1fr;
+        grid-template-areas:
+        "header header"
+        "contenido contenido"
+        "left left"
+        "footer footer";
+        grid-gap: 10px;
+        height: 100vh;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    
+    .item{
+        border-radius: 0px;
+        background-color: black;
+        color: antiquewhite;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    .header{
+        grid-area: header;
+    }
+    .header header{
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size:18px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header p{
+        margin: 15px 10px;
+        font-size: 16px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .left{
+        grid-area: left;
+        text-align: center;
+    }
+    .contenido{
+        padding-bottom: 10px;
+        grid-area: contenido;
+    }
+    .contenido h1{
+        text-align: center;
+        font-size: 18px;
+    }
+    .footer{
+        grid-area: footer;
+        display:flex;
+        align-items:  center;
+        padding: 0px 5vw;
+        justify-content: space-between;
+    }
+    .footer p{
+        font-size:14px
+    }
+    .footer-icons{
+        display: inline-flex;
+        gap: 2vw;
+    }
+    .footer-icons a{
+        color: antiquewhite;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .contenedor-grid{
+        display: grid;
+        grid-template: 25% 1fr 20% 10%/25% 1fr;
+        grid-template-areas:
+        "header header"
+        "contenido contenido"
+        "left left"
+        "footer footer";
+        grid-gap: 10px;
+        height: 100vh;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    
+    .item{
+        border-radius: 0px;
+        background-color: black;
+        color: antiquewhite;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    .header{
+        grid-area: header;
+    }
+    .header header{
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size:28px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header p{
+        margin: 15px 10px;
+        font-size: 22px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .left{
+        grid-area: left;
+        text-align: center;
+        font-size: 20px;
+    }
+    .contenido{
+        padding-bottom: 10px;
+        grid-area: contenido;
+    }
+    .contenido h1{
+        text-align: center;
+        font-size: 26px;
+    }
+    .footer{
+        grid-area: footer;
+        display:flex;
+        align-items:  center;
+        padding: 0px 5vw;
+        justify-content: space-between;
+    }
+    .footer p{
+        font-size:18px
+    }
+    .footer-icons{
+        display: inline-flex;
+        gap: 2vw;
+    }
+    .footer-icons a{
+        color: antiquewhite;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .contenedor-grid{
+        display: grid;
+        grid-template: 25% 1fr 20% 10%/25% 1fr;
+        grid-template-areas:
+        "header header"
+        "contenido contenido"
+        "left left"
+        "footer footer";
+        grid-gap: 10px;
+        height: 100vh;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    
+    .item{
+        border-radius: 0px;
+        background-color: black;
+        color: antiquewhite;
+        padding: 0px 10px;
+        border-radius: 10px;
+    }
+    .header{
+        grid-area: header;
+    }
+    .header header{
+        padding-top: 10px;
+        font-weight: bold;
+        text-align: center;
+        font-size:28px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .header p{
+        margin: 15px 10px;
+        font-size: 22px;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .left{
+        grid-area: left;
+        text-align: center;
+        font-size: 20px;
+    }
+    .contenido{
+        padding-bottom: 10px;
+        grid-area: contenido;
+    }
+    .contenido h1{
+        text-align: center;
+        font-size: 26px;
+    }
+    .footer{
+        grid-area: footer;
+        display:flex;
+        align-items:  center;
+        padding: 0px 5vw;
+        justify-content: space-between;
+    }
+    .footer p{
+        font-size:18px
+    }
+    .footer-icons{
+        display: inline-flex;
+        gap: 2vw;
+    }
+    .footer-icons a{
+        color: antiquewhite;
+        font-size: 20px;
+    }
+}
